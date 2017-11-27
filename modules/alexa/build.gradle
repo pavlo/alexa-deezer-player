@@ -9,6 +9,7 @@ repositories {
 
 dependencies {
     compile project(':modules/core')
+    compile project(':modules/deezer-api')
     compile 'com.amazon.alexa:alexa-skills-kit:1.5.0'
     compile 'com.amazonaws:aws-lambda-java-core:1.1.0'
     compile 'com.amazonaws:aws-lambda-java-log4j:1.0.0'

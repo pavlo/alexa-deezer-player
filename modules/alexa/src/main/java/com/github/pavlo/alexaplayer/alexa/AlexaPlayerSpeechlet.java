@@ -5,6 +5,7 @@ import com.amazon.speech.slu.Intent;
 import com.amazon.speech.speechlet.*;
 import com.amazon.speech.speechlet.interfaces.audioplayer.AudioPlayer;
 import com.amazon.speech.speechlet.interfaces.audioplayer.request.*;
+import com.github.pavlo.alexaplayer.deezer.PrototypeApi;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -52,7 +53,8 @@ public class AlexaPlayerSpeechlet implements SpeechletV2 , AudioPlayer {
 
 
         if ("SampleSearch".equals(intentName)) {
-            return ResponseUtils.simpleSpeech("SampleSearch is not yet implemented!");
+            new PrototypeApi().sampleSearch("Brad Mehldau", user.getAccessToken());
+            return ResponseUtils.simpleSpeech("SampleSearch is called, see its logs in cloud watch");
         }
         else if ("SamplePlayback".equals(intentName)) {
             return ResponseUtils.simpleSpeech("SamplePlayback is not yet implemented");
