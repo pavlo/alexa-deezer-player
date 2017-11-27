@@ -1,0 +1,19 @@
+jar {
+    baseName = 'alexaplayer-models'
+    version = '1.0.0-SNAPSHOT'
+}
+
+repositories {
+    mavenCentral()
+
+
+}
+
+dependencies {
+
+    // how to use the version used in alexa's module?
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.6.2'
+
+    compile 'com.amazonaws:aws-java-sdk-dynamodb:1.11.232'
+    compileOnly 'org.projectlombok:lombok:1.16.18'
+}

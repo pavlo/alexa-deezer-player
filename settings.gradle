@@ -1,0 +1,8 @@
+rootProject.name = 'Alexa Player for Deezer'
+
+include 'modules/commons'
+include 'modules/core'
+include 'modules/models'
+include 'modules/alexa'
+include 'modules/deezer-api'
+
