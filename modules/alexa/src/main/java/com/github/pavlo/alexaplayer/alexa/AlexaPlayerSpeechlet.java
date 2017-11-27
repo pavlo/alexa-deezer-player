@@ -42,7 +42,7 @@ public class AlexaPlayerSpeechlet implements SpeechletV2 , AudioPlayer {
         );
 
         if (user.getAccessToken() == null) {
-            return ResponseUtils.simpleSpeech("The still is not linked to your Deezer.com account, " +
+            return ResponseUtils.simpleSpeech("Your account is not linked to your Deezer.com, " +
                     "please link it in the Alexa app and then try again!");
         }
 
